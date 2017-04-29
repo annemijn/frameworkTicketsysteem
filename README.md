@@ -1,4 +1,4 @@
-# frameworkTicketsysteem
+# FrameworkTicketsysteem
 <h2>Dit is een framework die een form valideert met daarbij een optie voor het kiezen van tickets.</h2>
 
 ## Code Example
