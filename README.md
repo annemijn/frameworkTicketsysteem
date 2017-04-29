@@ -15,7 +15,7 @@ if (password == '') //als het leeg is
 Wil je veranderen waarop de value van een variabele zoals het wachtwoord wordt gecontroleerd?
 Dit kan je doen bij een var dat begint met patt. Daarna kan je zelf aangeven waarop het gecontroleerd moet worden:
 ```javascript
-			var pattPassword = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; //een nummer, hoofdletter en meer dan zes karakters
+var pattPassword = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; //een nummer, hoofdletter en meer dan zes karakters
 ```
 ## Demo
 [demo](http://localhost/dev/framework2/framework.html)
