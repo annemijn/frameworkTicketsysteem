@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/library.js"></script>
+    <style>
+        body{
+            color:darkgray;
+        }
+        span{
+            background-color:lightgray;
+            color:darkgray;
+            width:100%;
+        }
+        #melding{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+	<h1>Koop je ticket!</h1>
+	<form onsubmit="valideer(); return false" name="myform" id="inlog" action="" method="post">
+                  Gebruikersnaam:<br>
+  				<input type="text"  id="username" name="gebruikersnaam" placeholder="Gebruikersnaam" autofocus /><br>
+                  Wachtwoord:<br>
+  				<input type="password" id="password" name="wachtwoord" placeholder="Wachtwoord" /><br>
+                Kies ticket:<br>
+                  <select id="tickets">
+                  <option value="selectcard"> -- selecteer een optie-- </option>
+                    <option value="early">Early Bird</option>
+                    <option value="regular">Regular</option>
+                    <option value="vip">VIP</option>
+                  </select>
+                  <br><br>
+                <input type="submit" value="Kopen" name="submit" id="submit">  
+		</form>
+	<div id="melding"></div>
+<script>
+function valideer()
+{
+	//roep de library en daarin de functie aan
+	library.validate();
+};
+</script>
+</body>
+</html>
+
