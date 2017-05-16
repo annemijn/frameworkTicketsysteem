@@ -25,7 +25,7 @@ Dit kan je doen bij een var dat begint met patt. Daarna kan je zelf aangeven waa
 var pattPassword = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; //een nummer, hoofdletter en meer dan zes karakters
 ```
 ## Demo
-[demo](http://localhost/dev/framework2/framework.html)
+[demo](http://i315962.iris.fhict.nl/ticketsysteem/framework.html)
 
 
 ## Installation
