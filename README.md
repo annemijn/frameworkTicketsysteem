@@ -24,6 +24,12 @@ Dit kan je doen bij een var dat begint met patt. Daarna kan je zelf aangeven waa
 ```javascript
 var pattPassword = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; //een nummer, hoofdletter en meer dan zes karakters
 ```
+
+Als alle gegevens goed zijn ingevuld, wordt de gebruiker doorgestuurd naar een ticketwebsite. De URL kan je aanpassen bij de variable website:
+```javascript
+	var website = 'http://www.ticketmaster.nl/'; //maak variabele aan met link naar de website 
+```
+
 ## Demo
 [demo](http://i315962.iris.fhict.nl/ticketsysteem/framework.html)
 
