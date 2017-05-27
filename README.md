@@ -15,10 +15,10 @@ function valideer()
 };
 ```
 
-Als je wilt kan je de url veranderen waar de form naartoe wijst. Dit zet je in de parameter van de functie die je aanroept.
+Als je wilt kan je de url veranderen waar de form naartoe wijst, de pattern van de gebruikersnaam en van het wachtwoord. Dit zet je in de parameters van de functie die je aanroept.
 
 ```javascript
-Validate({website:'https://www.mojo.nl/'}); //verander de url van de variabele website
+    Validate({website:'https://www.mojo.nl/', pattUsername : /^[a-z0-9_-]{3,15}$/, pattPassword : /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/}); //verander de url van de variabele website, pattern van de gebruikersnaam en van het wachtwoord
 };
 ```
 
