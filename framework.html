@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/library.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+</head>
+<body>
+
+
+<div class="container">
+	<h1>KOOP JE TICKET!</h1>
+	<form onsubmit="valideer(); return false" name="myform" id="inlog" action="" method="post">
+                  Gebruikersnaam:<br>
+  				<input type="text"  id="username" name="gebruikersnaam" placeholder="Gebruikersnaam" autofocus /><br>
+                  Wachtwoord:<br>
+  				<input type="password" id="password" name="wachtwoord" placeholder="Wachtwoord" /><br>
+                Kies ticket:<br>
+                  <select id="tickets">
+                  <option value="selectcard"> -- selecteer een optie -- </option>
+                    <option value="early">Early Bird</option>
+                    <option value="regular">Regular</option>
+                    <option value="vip">VIP</option>
+                  </select>
+                  <br><br>
+                <input type="submit" value="Kopen" name="submit" id="submit">  
+		</form>
+	<div id="melding"></div>
+  </div>
+
+<script>
+/*Document.myform.addEventListener("click", Validate);*/
+
+function valideer()
+{
+    //roep de library en daarin de functie aan
+    Validate();
+   /* Validate({website:'https://www.mojo.nl/', pattUsername : /^[a-z0-9_-]{3,15}$/, pattPassword : /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/}); //verander de url van de variabele website, pattern van de gebruikersnaam en van het wachtwoord */
+};
+
+
+</script>
+</body>
+</html>
+
